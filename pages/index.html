@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 English Learning System</h1>
+    <p>Interactive Learning Platform</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('material')">Material</button>
+    <button onclick="showSection('quiz')">Quiz</button>
+    <button onclick="showSection('vocab')">Vocabulary</button>
+</nav>
+
+<section id="home" class="content">
+    <h2>Welcome</h2>
+    <p>Improve your English skills with interactive lessons and quizzes.</p>
+</section>
+
+<section id="material" class="content hidden">
+    <h2>Grammar Material</h2>
+    <h3>Simple Present Tense</h3>
+    <p>Formula: Subject + Verb 1 (+s/es)</p>
+    <p>Example: She plays football.</p>
+
+    <h3>Simple Past Tense</h3>
+    <p>Formula: Subject + Verb 2</p>
+    <p>Example: She played football.</p>
+</section>
+
+<section id="quiz" class="content hidden">
+    <h2>Quiz Section</h2>
+    <div id="question"></div>
+    <div id="answers"></div>
+    <button onclick="nextQuestion()">Next</button>
+    <h3 id="score"></h3>
+</section>
+
+<section id="vocab" class="content hidden">
+    <h2>Vocabulary</h2>
+    <input type="text" id="wordInput" placeholder="Enter English word">
+    <button onclick="translateWord()">Translate</button>
+    <p id="translation"></p>
+</section>
+
+<footer>
+    <p>© 2026 English Learning App | Skripsi Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
